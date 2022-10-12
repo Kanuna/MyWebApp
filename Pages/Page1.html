@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../Stylesheet/StyleSheet.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".button").click(function(){
+                    $("#div1").fadeIn();
+                    $("#div2").fadeIn(500);
+                    $("#div3").fadeIn(600);
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $(".second").click(function(){
+                    $("#div1").fadeOut();
+                    $("#div2").fadeOut(500);
+                    $("#div3").fadeOut(600);
+                });
+            });
+        </script>
+    </head>
+
+    <Body>
+        <ul>
+            <li class="active"><a href="../Index.html">Home</a></li>
+            <li class="active"><a href="Page1.html">Page1</a></li>
+            <li style="float: right;" class="active"><a href="Page2.html">Page2</a></li>  
+        </ul>
+
+        <button class="button" style="Position: absolute; top: 10%; background-color: aqua; border-color: aqua;">Click to fade in boxes</button><br><br>
+        <button class="second" style="Position: absolute; top: 10%; left:10%; background-color: aqua; border-color: aqua;">Click to fade out boxes</button>
+        <div id="div1" style="width:100px;height:100px;display:none;background-color: cyan; position: absolute; top:15%;"></div><br>
+        <div id="div2" style="width:80px;height:80px; border-radius: 50%; display:none;background-color:rgb(29, 255, 29); position: absolute; top: 15%; left: 10%;"></div><br>
+        <div id="div3" style="width:60px;height:60px; border-top-left-radius: 5%; border-top-right-radius: 20%; border-bottom-left-radius: 50%; border-bottom-right-radius: 35%; display:none;background-color:rgb(255, 0, 166); position: absolute; top: 15%; left: 18%;"></div>
+
+    </Body>
+</html>

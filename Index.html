@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Stylesheet/StyleSheet.css">
+        <title>Something</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("img").hide();
+            });
+            $("#show").click(function(){
+                $("img").show();
+            });
+        });
+    </script>
+    </head>
+
+    <Body>
+        <ul style="position: fixed; max-width: 100%;">
+            <li class="active"><a href="Index.html">Home</a></li>
+            <li class="active"><a href="Pages/Page1.html">Page1</a></li>
+            <li style="float: right;" class="active"><a href="Pages/Page2.html">Page2</a></li>    
+        </ul>
+
+        <button id="hide" style="position: absolute; top: 12%; left: 5%; width:80px; height: 30px;">Hide</button>
+        <button id="show" style="position: absolute; top: 12%; left: 12%; width:80px; height: 30px;">Hide</button>
+
+        <img src="img/Kitten.jpg" style="position: absolute; height: 75%; width: 60%; top: 10%; left: 20%; border-bottom-right-radius: 20%;
+            border-top-right-radius: 50%; border-bottom-left-radius: 20%; border-top-left-radius: 50%;">
+
+    </Body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../Stylesheet/StyleSheet.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("div").animate({
+                    left: '600',
+                    opacity: '0.7',
+                    height: '300px',
+                    width: '300px'
+                });
+            });
+        });
+        </script>
+    </head>
+
+    <Body>
+        <ul>
+            <li class="active"><a href="../Index.html">Home</a></li>
+            <li class="active"><a href="Page1.html">Page1</a></li>
+            <li style="float: right;" class="active"><a href="Page2.html">Page2</a></li>  
+        </ul>
+
+        <button style="Position: absolute; top: 10%;">Start Animation</button>
+
+        <div style="background: cyan; height: 100px; width: 100px; position: absolute; top: 15%;"></div>
+
+    </Body>
+</html>
